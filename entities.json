@@ -57,5 +57,78 @@
             "+ de chances d'évènements chantants",
             "Si évènement chantant, -15% de santé mentale par contact au lieu de 10%"
         ]
+    },
+    {
+        "nom" : "Djinn",
+        "preuves" : ["emf5", "empreintes", "temperature"],
+        "particularites" : [
+            "Ne peut pas couper le courant",
+            "Incapable d'utiliser ses pouvoirs si courant éteint",
+            "Chasse à 50% de santé mentale",
+            "Gagne en vitesse lorsqu'il vous voit",
+            "Peut enlever 25% de santé mentale quand la cible est à 3m de lui -> emf sur le disjoncteur"
+        ]
+    },
+    {
+        "nom" : "Cauchemar",
+        "preuves" : ["spirit-box", "orbe", "ecriture"],
+        "particularites" : [
+            "Vitesse normale",
+            "Chasse à 60% de santé mentale dans l'obscurité, 40% dans la lumière (position de l'entité)",
+            "Ne peut pas allumer lumière/télé/ordi mais peut allumer la radio",
+            "Peut éteindre la lumière quand le joueur l'allume",
+            "Moins actif si lumière allumée",
+            "Peut changer de pièce si lumière éteinte",
+            "+ de chance d'évènement d'ampoule cassée"
+        ]
+    },
+    {
+        "nom" : "Revenant",
+        "preuves" : ["orbe", "ecriture", "temperature"],
+        "particularites" : [
+            "Vitesse normale si il sait pas où est le joueur",
+            "Vitesse 3m/s si il sait où est le joueur (autant que le joueur)",
+            "Ralentit si le joueur est caché",
+            "Chasse à 50% de santé mentale",
+            "Toujours éteindre le matériel électrique avant la chasse"
+        ]
+    },
+    {
+        "nom" : "Ombre",
+        "preuves" : ["emf5", "ecriture", "temperature"],
+        "particularites" : [
+            "Vitesse normale",
+            "Chasse à 35% de santé mentale",
+            "Moins de chances d'attaquer si un ou plusieurs joueurs sont dans la pièce",
+            "Ne peut pas bouger d'objets si un joueur est dans la pièce",
+            "Chance de se montrer sous forme d'ombre",
+            "+ de chances de faire le souffle",
+            "Pas d'évènement si santé mentale à 100%, réduit si santé mentale 50-99%",
+            "Voir au camion si + d'activité quand la salle est vide"
+        ]
+    },
+    {
+        "nom" : "Démon",
+        "preuves" : ["empreintes", "ecriture", "temperature"],
+        "particularites" : [
+            "Peut chasser à 100% de santé mentale",
+            "Vitesse normale",
+            "Chasse + souvent",
+            "Peut chasser sans utiliser son pouvoir à partir de 70% de santé mentale",
+            "Si encens dans une pièce, ne peut pas chasser dans cette pièce pendant 60s (au lieu de 90s)",
+            "Zone d'effet plus large du crucifix (+2m)"
+        ]
+    },
+    {
+        "nom" : "Yurei",
+        "preuves" : ["orbe", "dots", "temperature"],
+        "particularites" :[
+            "Vitesse normale",
+            "Chasse à 50% de santé mentale",
+            "Peut enlever aléatoirement 15% de santé mentale sans utiliser son pouvoir",
+            "Double interaction très rapide sur une porte",
+            "Encens dans la salle = entité bloquée dans la salle pendant 60s",
+            "Peut fermer la porte d'entrée sans chasse"
+        ]
     }
 ]
