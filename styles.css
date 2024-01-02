@@ -1,0 +1,46 @@
+.title{
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+}
+.card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    &:hover {
+        background-color: #ddd;
+    }
+    transition: all 0.3s ease;
+}
+.card .card-content {
+    display: none;
+}
+
+.active .card-content{
+    display: block !important;
+}
+
+/* Preuves */
+.card .card-content .preuves {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > .preuve {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5vw;
+        & > img {
+            height: 10vh;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .preuve {
+        margin: 0;
+    }
+}

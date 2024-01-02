@@ -1,0 +1,61 @@
+[
+    {
+        "nom" : "Esprit",
+        "preuves": ["emf5","spirit-box", "ecriture"],
+        "particularites": [
+            "Rattaque à partir de 180s au lieu de 90s avec l'encens",
+            "Vitesse normale",
+            "Chasse à 50% de santé mentale"
+        ]
+    },
+    {
+        "nom" : "Spectre",
+        "preuves" : ["emf5","spirit-box","dots"],
+        "particularites": [
+            "Se téléporte à la place du joueur avec un emf2",
+            "À tester avec capteurs et sel",
+            "Éviter les objets maudits (tp)",
+            "Chasse à 50% de santé mentale"
+        ]
+    },
+    {
+        "nom" : "Fantôme",
+        "preuves" : ["spirit-box", "empreintes", "dots"],
+        "particularites": [
+            "Le prendre en photo le fera disparaître",
+            "Vitesse normale",
+            "Clignotement plus lent lors de la chasse, invisible minimum 1s",
+            "Marche vers les joueurs avec un emf2",
+            "À tester avec 2 capteurs"
+        ]
+    },
+    {
+        "nom" : "Poltergeist",
+        "preuves" : ["spirit-box", "empreintes", "ecriture"],
+        "particularites" : [
+            "Peut lancer plusieurs objets au même moment",
+            "Tester avec un tas d'objets",
+            "Vitesse normale",
+            "Chasse à 50% de santé mentale",
+            "Gros pic d'emf au camion",
+            "-2% de santé mentale par objet lancé",
+            "Jette les objets plus fort",
+            "En chasse, jette des objets toutes les 0,5s"
+        ]
+    },
+    {
+        "nom" : "Banshee",
+        "preuves" : ["empreintes", "orbe", "dots"],
+        "particularites" : [
+            "30% de chance de cri au micro parabolique",
+            "Attaquera à 50% de santé mentale de la cible même en multi",
+            "Vitesse normale",
+            "Cible aléatoire, changement de cible seulement si celle-ci est morte",
+            "Skin homme/femme",
+            "Agit comme une entité normale quand sa cible est en dehors de la maison",
+            "En cauchemar, peut suivre sa cible avec un emf2 au lieu de départ",
+            "+ de chances d'évènements chantants",
+            "Si évènement chantant, -15% de santé mentale par contact au lieu de 10%"
+        ]
+    }
+]
