@@ -1,3 +1,8 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .title{
     text-align: center;
 }
@@ -58,5 +63,15 @@
 @media screen and (max-width: 768px) {
     .preuve {
         margin: 0;
+    }
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    & > input{
+        margin: 1vw 1vw;
     }
 }
