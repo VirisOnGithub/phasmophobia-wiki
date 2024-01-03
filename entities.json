@@ -218,5 +218,81 @@
             "Le jumeau qui attaque est aléatoire (pas 50%)",
             "Le faux jumeau peut attaquer de là où il a fait sa dernière interaction"
         ]
+    },
+    {
+        "nom" : "Raiju",
+        "preuves" : ["emf5", "orbe", "dots"],
+        "particularites" : [
+            "Vitesse variable",
+            "Chasse variable",
+            "Ne peut pas utiliser son pouvoir s'il n'y a pas d'objet électrique dans son périmètre",
+            "Entité normale si pas d'élec autour de lui (vitesse normale, 50% de santé mentale)",
+            "Si pouvoir (grâce à emf, caméra, lampe, ...) peut attaquer à 65% de santé mentale",
+            "Peut giltcher les appareils électriques à 15m au lieu de 10m"
+        ]
+    },
+    {
+        "nom" : "Obake",
+        "preuves" : ["emf5", "empreintes", "orbe"],
+        "particularites" : [
+            "Vitesse normale",
+            "Chasse à 50% de santé mentale",
+            "Empreinte obligatoire en cauchemar",
+            "laisse des empreintes 75% du temps",
+            "25% de chance de laisser des empreintes à 6 doigts",
+            "2 doigts sur interrupteur, 5 doigts sur clavier",
+            "Peut aléatoirement diviser le temps d'une empreinte (60s au lieu de 120s)",
+            "6,66% de chance de changer de skin pendant le clignotement, au moins une fois par chasse"
+        ]
+    },
+    {
+        "nom" : "Mimic",
+        "preuves" : ["spirit-box", "empreintes", "temperature", "orbe"],
+        "particularites" : [
+            "Copie des entités donc vitesse variable et chasse variable",
+            "Ne peut pas changer d'entité pendant la chasse",
+            "Orbe obligatoire dans tous les modes",
+            "Copie <span style='text-decoration: underline'>entièrement</span> l'entité",
+            "Exceptions : Goryo (pas de dots), Thayé (âge aléatoire)"
+        ]
+    },
+    {
+        "nom" : "Moroï",
+        "preuves" : ["spirit-box", "ecriture" ,"temperature"],
+        "particularites" : [
+            "Spirit box obligatoire (comme le Deogen)",
+            "Chasse à 50% de santé mentale",
+            "Vitesse variable en fonction de la santé mentale",
+            "Accélère à la vue du joueur",
+            "à 0% de santé mentale, entité la plus rapide du jeu",
+            "Tester les pilules en chasse pour le ralentissement",
+            "Quand son entendu (micro ou spirit), santé mentale réduit 2 fois plus vite -> pilules",
+            "Invincibilité de l'encens doublée :12s au lieu de 6s"
+        ]
+    },
+    {
+        "nom" : "Deogen",
+        "preuves" : ["spirit-box", "ecriture", "dots"],
+        "particularites" : [
+            "Spirit box obligatoire (comme le Moroï)",
+            "Chasse à 40% de santé mentale",
+            "Vitesse loin delui rapide, près de lui lente",
+            "Sait constamment où le joueur est (donc ne pas se cacher)",
+            "À moins d'un mètre, 33% de chance de cri à la spirit box",
+            "Ecriture et dots plus rapides comme le Thayé"
+        ]
+    },
+    {
+        "nom" : "Thayé",
+        "preuves" : ["orbe", "ecriture", "dots"],
+        "particularites" : [
+            "Vitesse et chasse en fonction de son âge",
+            "Âge change quand il est proche d'un joueur",
+            "Au plus jeune, très rapide, attaque à 75% de santé mentale",
+            "+200% de chance de vous faire des interactions", 
+            "Chaque stade baisse la chasse de 6%, ses interactions de 15%",
+            "Au plus vieux, attaque à 15% de santé mentale et très lent (ne peut pas accélérer)",
+            "Demander son âge à la ouija pour voir si il change"
+        ]
     }
 ]
