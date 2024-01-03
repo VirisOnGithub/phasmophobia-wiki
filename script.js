@@ -14,10 +14,22 @@ function displayData(dataToDisplay) {
         let card = document.createElement('div');
         card.setAttribute('class', 'card');
         card.setAttribute('onclick', 'this.classList.toggle("active");');
+
+        let titleContainer = document.createElement('div');
+        titleContainer.setAttribute('class', 'title-container');
+        card.appendChild(titleContainer);
+
         let title = document.createElement('h2');
         title.innerHTML = element.nom;
 
-        card.appendChild(title);
+        titleContainer.appendChild(title);
+
+        element.preuves.forEach(preuve => {
+            let preuveElement = document.createElement('img');
+            preuveElement.setAttribute('src', './assets/'+preuve+'.png');
+            preuveElement.setAttribute('class', 'preuveTitle');
+            titleContainer.appendChild(preuveElement);
+        });
 
         let cardContent = document.createElement('div');
         cardContent.setAttribute('class', 'card-content');
@@ -64,10 +76,24 @@ document.getElementById('search').addEventListener('input', function(e) {
     search(e.target.value);
 });
 
+document.getElementById('searchProofs').addEventListener('input', function(e) {
+    searchProofs(e.target.value);
+});
+
 function search(query) {
     let filteredData = data.filter(element => element.nom.toLowerCase().includes(query.toLowerCase()));
     
     let grid = document.getElementById('grid-container');
     grid.innerHTML = '';
     displayData(filteredData);
+}
+
+function searchProofs(query) {
+    let filteredData1 = data.filter(element => element.preuves[0].includes(query));
+    let filteredData2 = data.filter(element => element.preuves[1].includes(query));
+    let filteredData3 = data.filter(element => element.preuves[2].includes(query));
+    
+    let grid = document.getElementById('grid-container');
+    grid.innerHTML = '';
+    displayData(filteredData1.concat(filteredData2).concat(filteredData3));
 }

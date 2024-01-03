@@ -1,6 +1,21 @@
 .title{
     text-align: center;
 }
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    & > .preuveTitle{
+        height: 5vh;
+        margin: 0 1vw;
+    }
+}
+
+.active > .title-container > .preuveTitle{
+    display: none;
+}
+
 .grid-container {
     display: grid;
     padding: 10px;
