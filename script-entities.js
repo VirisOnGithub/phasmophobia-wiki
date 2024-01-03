@@ -1,6 +1,6 @@
 let data;
 
-fetch('./entities.json')
+fetch('./src/entities.json')
     .then(response => response.json())
     .then(fetchedData => {
         data = fetchedData;

@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Miroir maudit",
+        "filename" : "miroir.png",
+        "usage" : "Voir la pièce de l'entité",
+        "desc" : [
+            "20% de santé mentale requis pour l'utiliser",
+            "Enlève 7,5%/s de santé mentale",
+            "Si la santé mentale est insuffisante, une chasse maudite se lance"
+        ]
+    },
+    {
+        "name" : "Cercle d'invocation",
+        "filename" : "cercle.png",
+        "usage" : "Faire apparaître l'entité (photos, quêtes)",
+        "desc" : [
+            "Allumer les bougies avec un briquet",
+            "Chaque bougie allmumée enlève 16% de santé mentale",
+            "Une bougie ne s'allume pas si vous n'avez pas assez de santé mentale",
+            "Il faut 80% de santé mentale pour allumer le cercle",
+            "Quand le cercle est allumé, l'entité apparaît pendant 5 secondes, puis une chasse maudite se lance"
+        ]
+    }
+]
