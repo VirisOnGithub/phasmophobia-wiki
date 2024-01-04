@@ -5,7 +5,7 @@
 			lineColor: "#99caff",
 			completeColor: "#007bff",
 			showPercent: true,
-			showLegend: true,
+			showLegend: false,
 			legend: "legend",
 		};
 
