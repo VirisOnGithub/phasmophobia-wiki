@@ -1,0 +1,23 @@
+#progressBar {
+  margin-top: 0.4655rem;
+  position: relative;
+}
+#progressBar .percent {
+  position: absolute;
+  left: 0;
+  top: -30px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#progressBar .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#progressBar .complete {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+}

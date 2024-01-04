@@ -20,5 +20,65 @@
             "Il faut 80% de santé mentale pour allumer le cercle",
             "Quand le cercle est allumé, l'entité apparaît pendant 5 secondes, puis une chasse maudite se lance"
         ]
+    },
+    {
+        "name" : "Table de Ouija",
+        "filename" : "ouija.png",
+        "usage" : "Poser des questions à l'entité",
+        "desc" : [
+            "Ne fonctionne pas dehors",
+            "Se casse si on a pas assez de santé mentale",
+            "Bien dire au revoir à la fin",
+            "Peut avoir l'EMF 5",
+            "Questions :",
+            "- Où êtes-vous ? → -50% de santé mentale",
+            "- Êtes-vous ici ? Oui/Non → -20% de santé mentale",
+            "- Quel âge avez-vous ? → -5% de santé mentale (Utile pour le Thayé)",
+            "- Cache-cache → compte à rebours puis chasse maudite"
+        ]
+    },
+    {
+        "name" : "Poupée",
+        "filename" : "poupee.png",
+        "usage" : "Forcer les interactions",
+        "desc" : [
+            "10 aiguillles",
+            "Une aiguille s'enfonce aléatoirement",
+            "-5% de santé mentale par aiguille",
+            "Si pas assez de santé mentale : chasse maudite"
+        ]
+    },
+    {
+        "name" : "Boîte à musique",
+        "filename" : "boite.png",
+        "usage" : "Attirer l'entité",
+        "desc" : [
+            "Si elle est à moins de 5m de la boîte, elle s'y dirige",
+            "Tous les joueurs à moins de 2m50 perdent 2,5%/s de santé mentale",
+            "La mélodie dure 30 secondes → -75% de santé mentale"
+        ]
+    },
+    {
+        "name" : "Patte de singe",
+        "filename" : "patte.png",
+        "usage" : "Faire des voeux",
+        "desc" : [
+            "5 voeux",
+            "<h4>Entité :</h4>",
+            "- 'Je souhaite voir le fantôme' → fait apparaître le fantôme pendant 5 secondes, puis chasse maudite",
+            "- 'Je souhaite que le fantôme soit actif' → double l'activité, verrouille la porte principale pendant 2 min, casse le disjoncteur",
+            "- 'Je souhaite emprisonner le fantôme' →  tp l'entité dans sa pièce préférée pendant 1 min et verrouille la salle du joueur, pas de chasse pendant ce temps, puis chasse maudite (25% de chance que les portes ne s'ouvrent qu'après la période de grâce)",
+            "<h4>Joueur :</h4>",
+            "- 'Je souhaite être sain d'esprit' → Met tous les joueurs à 50% de santé mentale, augmente la perte de santé mentale de 50%, l'entité change de pièce favorite",
+            "- 'Je souhaite être en sécurité' → Libère la cachette la plus proche du joueur, lumière de la pièce qui se cassent, l'entité peut détecter les appareils électriques à n'importe quelle distance (au lieu de 8m)'",
+            "- 'Je souhaite partir' →  déverouille toutes les portes (même celle de l'entrée), la vitesse et la vision du joueur sont réduites pendant 5s",
+            "- 'Je souhaite réanimer un ami' → réanime un joueur mort, le joueur qui fait le voeu a 50 de chance de mourir",
+            "<h4>Autre :</h4>",
+            "- 'Je souhaite avoir des informations' → supprime une preuve incorrecte, lance une chasse maudite, le joueur a une vision réduit et un son étouffé jusqu'à la fin de la partie",
+            "- 'Je souhaite changer la météo : le joueur peut choisir le type de météo souhaitée, mais sa vision se brouille et il perd 25% de santé mentale",
+            "- 'Je souhaite n'importe quoi : lance un souhait non encore réalisé au hasard",
+            " ",
+            "Chaque voeu est unique"
+        ]
     }
 ]

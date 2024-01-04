@@ -1,0 +1,56 @@
+[
+    {
+        "name" : "Le Soleil",
+        "filename" : "Sun.jpg",
+        "effect" : "Remonte la santée mentale à 100%",
+        "probability" : 5
+    },
+    {
+        "name" : "La Lune",
+        "filename" : "Moon.jpg",
+        "effect" : "Descend la santé mentale à 0%",
+        "probability" : 5
+    },
+    {
+        "name" : "La Mort",
+        "filename" : "Death.jpg",
+        "effect" : "Lance une chasse maudite",
+        "probability" : 10
+    },
+    {
+        "name" : "Le Diable",
+        "filename" : "Devil.jpg",
+        "effect" : "Provoque un évènement aléatoire au joueur le plus proche de l'entité",
+        "probability" : 10
+    },
+    {
+        "name" : "La Roue de Fortune",
+        "filename" : "WheelOfFortune.jpg",
+        "effect" : "+25% de santé mentale si elle brûme en vert, -25% si elle brûle en rouge",
+        "probability" : 20
+    },
+    {
+        "name" : "Le Fou",
+        "filename" : "Fool.jpg",
+        "effect" : "Aucun. Toutes les cartes tirées pendant une chasse sont des fous",
+        "probability" : 17
+    },
+    {
+        "name" : "La Grande Prêtresse",
+        "filename" : "Preistess.jpg",
+        "effect" : "Remonte la santée mentale à 25%",
+        "probability" : 2
+    },
+    {
+        "name" : "Le Pendu",
+        "filename" : "Hangedman.jpg",
+        "effect" : "Tue instantanément le joueur",
+        "probability" : 1
+    },
+    {
+        "name" : "L'hermite",
+        "filename" : "Hermit.jpg",
+        "effect" : "Téléporte l'entité dans sa salle favorite et l'emprisonne pendant 1 min",
+        "probability" : 17
+    }
+]

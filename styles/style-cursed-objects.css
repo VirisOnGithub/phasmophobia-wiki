@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    letter-spacing: 0;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin: 10px;
+}
+.image{
+    width: 30vw;
+    margin: 10px;
+}
+.content-wrapper{
+    width: calc(90vw - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .card{
+        flex-direction: column;
+    }
+    .image{
+        width: 50vw;
+        margin: 10px;
+    }
+    .content-wrapper{
+        width: calc(100vw - 50px);
+    }
+    
+}
