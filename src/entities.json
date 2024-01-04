@@ -2,15 +2,16 @@
     {
         "nom" : "Esprit",
         "preuves": ["emf5","spirit-box", "ecriture"],
+        "vitesse" : 50,
         "particularites": [
             "Rattaque à partir de 180s au lieu de 90s avec l'encens",
-            "Vitesse normale",
             "Chasse à 50% de santé mentale"
         ]
     },
     {
         "nom" : "Spectre",
         "preuves" : ["emf5","spirit-box","dots"],
+        "vitesse" : 50,
         "particularites": [
             "Se téléporte à la place du joueur avec un emf2",
             "À tester avec capteurs et sel",
@@ -21,9 +22,9 @@
     {
         "nom" : "Fantôme",
         "preuves" : ["spirit-box", "empreintes", "dots"],
+        "vitesse" : 50,
         "particularites": [
             "Le prendre en photo le fera disparaître",
-            "Vitesse normale",
             "Clignotement plus lent lors de la chasse, invisible minimum 1s",
             "Marche vers les joueurs avec un emf2",
             "À tester avec 2 capteurs"
@@ -32,10 +33,10 @@
     {
         "nom" : "Poltergeist",
         "preuves" : ["spirit-box", "empreintes", "ecriture"],
+        "vitesse" : 50,
         "particularites" : [
             "Peut lancer plusieurs objets au même moment",
             "Tester avec un tas d'objets",
-            "Vitesse normale",
             "Chasse à 50% de santé mentale",
             "Gros pic d'emf au camion",
             "-2% de santé mentale par objet lancé",
@@ -46,10 +47,10 @@
     {
         "nom" : "Banshee",
         "preuves" : ["empreintes", "orbe", "dots"],
+        "vitesse" : 50,
         "particularites" : [
             "30% de chance de cri au micro parabolique",
             "Attaquera à 50% de santé mentale de la cible même en multi",
-            "Vitesse normale",
             "Cible aléatoire, changement de cible seulement si celle-ci est morte",
             "Skin homme/femme",
             "Agit comme une entité normale quand sa cible est en dehors de la maison",
@@ -59,8 +60,9 @@
         ]
     },
     {
-        "nom" : "DjdeeEinn",
+        "nom" : "Djinn",
         "preuves" : ["emf5", "empreintes", "temperature"],
+        "vitesse" : 0,
         "particularites" : [
             "Ne peut pas couper le courant",
             "Incapable d'utiliser ses pouvoirs si courant éteint",
@@ -72,8 +74,8 @@
     {
         "nom" : "Cauchemar",
         "preuves" : ["spirit-box", "orbe", "ecriture"],
+        "vitesse" : 50,
         "particularites" : [
-            "Vitesse normale",
             "Chasse à 60% de santé mentale dans l'obscurité, 40% dans la lumière (position de l'entité)",
             "Ne peut pas allumer lumière/télé/ordi mais peut allumer la radio",
             "Peut éteindre la lumière quand le joueur l'allume",
@@ -85,6 +87,7 @@
     {
         "nom" : "Revenant",
         "preuves" : ["orbe", "ecriture", "temperature"],
+        "vitesse" : 50,
         "particularites" : [
             "Vitesse normale si il sait pas où est le joueur",
             "Vitesse 3m/s si il sait où est le joueur (autant que le joueur)",
@@ -96,8 +99,8 @@
     {
         "nom" : "Ombre",
         "preuves" : ["emf5", "ecriture", "temperature"],
+        "vitesse" : 50,
         "particularites" : [
-            "Vitesse normale",
             "Chasse à 35% de santé mentale",
             "Moins de chances d'attaquer si un ou plusieurs joueurs sont dans la pièce",
             "Ne peut pas bouger d'objets si un joueur est dans la pièce",
@@ -110,9 +113,9 @@
     {
         "nom" : "Démon",
         "preuves" : ["empreintes", "ecriture", "temperature"],
+        "vitesse" : 50,
         "particularites" : [
             "Peut chasser à 100% de santé mentale",
-            "Vitesse normale",
             "Chasse + souvent",
             "Peut chasser sans utiliser son pouvoir à partir de 70% de santé mentale",
             "Si encens dans une pièce, ne peut pas chasser dans cette pièce pendant 60s (au lieu de 90s)",
@@ -122,8 +125,8 @@
     {
         "nom" : "Yurei",
         "preuves" : ["orbe", "dots", "temperature"],
+        "vitesse" : 50,
         "particularites" :[
-            "Vitesse normale",
             "Chasse à 50% de santé mentale",
             "Peut enlever aléatoirement 15% de santé mentale sans utiliser son pouvoir",
             "Double interaction très rapide sur une porte",
@@ -134,9 +137,9 @@
     {
         "nom" : "Oni",
         "preuves" : ["orbe", "temperature","dots"],
+        "vitesse" : 50,
         "particularites" : [
             "Chasse à 50% de santé mentale",
-            "Vitesse normale",
             "Enlève 20% de santé mentale lors d'évènements paranormaux (au lieu de 10%)",
             "Ne peut pas faire de souffle",
             "Fait plus d'évènements paranormaux",
@@ -146,8 +149,8 @@
     {
         "nom" : "Yokai",
         "preuves" : ["spirit-box", "orbe", "dots"],
+        "vitesse" : 50,
         "particularites" : [
-            "Vitesse normale",
             "Chasse à 50% de santé mentale",
             "Attaque à 80% de santé mentale si on parle à côté de lui",
             "N'entend pas le matériel électrique et la voix à plus de 2m50 de lui",
@@ -158,6 +161,7 @@
     {
         "nom" : "Hantu",
         "preuves" : ["empreintes", "orbe", "temperature"],
+        "vitesse" : 0,
         "particularites" : [
             "Chasse à 50% de santé mentale",
             "Preuve de température obligatoire en cauchemar",
@@ -173,8 +177,8 @@
     {
         "nom" : "Goryo",
         "preuves" : ["emf5", "empreintes", "dots"],
+        "vitesse" : 50,
         "particularites" : [
-            "Vitesse normale",
             "Chasse à 50% de santé mentale",
             "Dots uniquement visible à la caméra",
             "Ne pas mettre les dots quand quelqu'un est dans la pièce",
@@ -186,8 +190,8 @@
     {
         "nom" : "Myling",
         "preuves" : ["emf5", "empreintes", "ecriture"],
+        "vitesse" : 50,
         "particularites" : [
-            "Vitesse normale",
             "Chasse à 50% de santé mentale",
             "+ de sons paranormaux au micro parabolique",
             "Bruits de pas moins audibles et de plus près"
@@ -196,8 +200,8 @@
     {
         "nom" : "Onryo",
         "preuves" : ["spirit-box", "orbe", "temperature"],
+        "vitesse" : 50,
         "particularites" : [
-            "Vitesse normale",
             "Chasse à 60% de santé mentale",
             "Après avoir soufflé 3 bougies, il chasse quelque soit la santé mentale (max 6s)",
             "Après le 3e souffle, 50% de chance d'attaquer",
@@ -210,6 +214,7 @@
     {
         "nom" : "Jumeaux",
         "preuves" : ["emf5", "spirit-box", "temperature"],
+        "vitesse" : 0,
         "particularites" : [
             "Chasse à 50% de santé mentale",
             "2 vitesses différentes (une rapide et une lente)",
@@ -222,6 +227,7 @@
     {
         "nom" : "Raiju",
         "preuves" : ["emf5", "orbe", "dots"],
+        "vitesse" : 0,
         "particularites" : [
             "Vitesse variable",
             "Chasse variable",
@@ -234,8 +240,8 @@
     {
         "nom" : "Obake",
         "preuves" : ["emf5", "empreintes", "orbe"],
+        "vitesse" : 50,
         "particularites" : [
-            "Vitesse normale",
             "Chasse à 50% de santé mentale",
             "Empreinte obligatoire en cauchemar",
             "laisse des empreintes 75% du temps",
@@ -248,6 +254,7 @@
     {
         "nom" : "Mimic",
         "preuves" : ["spirit-box", "empreintes", "temperature", "orbe"],
+        "vitesse" : 0,
         "particularites" : [
             "Copie des entités donc vitesse variable et chasse variable",
             "Ne peut pas changer d'entité pendant la chasse",
@@ -259,6 +266,7 @@
     {
         "nom" : "Moroï",
         "preuves" : ["spirit-box", "ecriture" ,"temperature"],
+        "vitesse" : 0,
         "particularites" : [
             "Spirit box obligatoire (comme le Deogen)",
             "Chasse à 50% de santé mentale",
@@ -273,10 +281,11 @@
     {
         "nom" : "Deogen",
         "preuves" : ["spirit-box", "ecriture", "dots"],
+        "vitesse" : 50,
         "particularites" : [
             "Spirit box obligatoire (comme le Moroï)",
             "Chasse à 40% de santé mentale",
-            "Vitesse loin delui rapide, près de lui lente",
+            "Vitesse loin de lui rapide, près de lui lente",
             "Sait constamment où le joueur est (donc ne pas se cacher)",
             "À moins d'un mètre, 33% de chance de cri à la spirit box",
             "Ecriture et dots plus rapides comme le Thayé"
@@ -285,6 +294,7 @@
     {
         "nom" : "Thayé",
         "preuves" : ["orbe", "ecriture", "dots"],
+        "vitesse" : 0,
         "particularites" : [
             "Vitesse et chasse en fonction de son âge",
             "Âge change quand il est proche d'un joueur",

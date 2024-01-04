@@ -5,6 +5,8 @@
 			lineColor: "#99caff",
 			completeColor: "#007bff",
 			showPercent: true,
+			showLegend: true,
+			legend: "legend",
 		};
 
 		var settings = $.extend({}, defaults, options);
@@ -15,6 +17,9 @@
 		var drawLine = function (self) {
 			if (settings.showPercent) {
 				self.prepend(`<div class=\"percent\"></div>`);
+			}
+			if (settings.legend) {
+				self.prepend(`<div class=\"legend\">${settings.legend}</div>`);
 			}
 
 			var str = "<div class=\"line\"></div>";
@@ -57,6 +62,15 @@
 					"left": percent + "%",
 					"transform": "translate(-50%, 0%)",
 				});
+			}
+
+			if(settings.showLegend) {
+				var l = this.find(".legend");
+				l.css({
+					"left": 50+'%',
+					"transform": "translate(-50%, -25%)",
+				});
+			
 			}
 
 			this.find(".complete").css("width", percent + "%");

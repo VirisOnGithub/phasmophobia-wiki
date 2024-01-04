@@ -10,7 +10,7 @@ fetch('./src/entities.json')
 
 function displayData(dataToDisplay) {
     let grid = document.getElementById('grid-container');
-    dataToDisplay.forEach(element => {
+    dataToDisplay.forEach((element, index) => {
         let card = document.createElement('div');
         card.setAttribute('class', 'card');
         card.setAttribute('onclick', 'this.classList.toggle("active");');
@@ -50,6 +50,17 @@ function displayData(dataToDisplay) {
             preuves.appendChild(preuveElement);
         });
         cardContent.appendChild(preuves);
+
+        let subtitle1 = document.createElement('h3');
+        subtitle1.innerHTML = "Vitesse";
+        cardContent.appendChild(subtitle1);
+
+        let vitesse = document.createElement('div');
+        vitesse.setAttribute('id', 'progressBar'+index);
+        vitesse.classList.add('progressBar');
+        let legend = element.vitesse === 0 ? "Variable" : "";
+        progressbar('progressBar'+index, element.vitesse, legend);
+        cardContent.appendChild(vitesse);
 
         let subtitle2 = document.createElement('h3');
         subtitle2.innerHTML = "Particularités";
@@ -96,4 +107,20 @@ function searchProofs(query) {
     let grid = document.getElementById('grid-container');
     grid.innerHTML = '';
     displayData(filteredData1.concat(filteredData2).concat(filteredData3));
+}
+
+
+function progressbar(id, percent, legend){
+    $(document).ready(function () {
+        var progressBar = $('#'+id).lineProgressBar({
+            numOfLines: 10,
+            showPercent: false,
+            lineColor: "#82f7ff",
+            completeColor: "#0094cc",
+            showLegend: legend==="" ? false : true,
+            legend: legend,
+        });
+        
+        progressBar.update(percent);
+    });
 }

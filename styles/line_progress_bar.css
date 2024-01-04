@@ -1,23 +1,43 @@
-#progressBar {
+.progressBar {
   margin-top: 0.4655rem;
   position: relative;
 }
-#progressBar .percent {
+.progressBar .percent {
   position: absolute;
   left: 0;
   top: -30px;
   padding-bottom: 10px;
   text-align: center;
 }
-#progressBar .line {
+.progressBar .line {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-#progressBar .complete {
+.progressBar .complete {
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
+}
+
+.progressBar .legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+  z-index: 1;
+}
+
+@media screen and (min-width: 769px) {
+  .progressBar {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }
