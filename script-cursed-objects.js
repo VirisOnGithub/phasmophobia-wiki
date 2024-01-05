@@ -4,11 +4,11 @@ fetch('https://api.npoint.io/e50e2a66276be605a9db')
     .then(response => response.json())
     .then(fetchedData => {
         data = fetchedData;
-        displayData(data);
+        displayObjects(data);
     })
     .catch(error => console.error('Erreur:', error));
 
-function displayData(d) {
+function displayObjects(d) {
     let grid = document.getElementById('grid');
 
     d.forEach(e => {

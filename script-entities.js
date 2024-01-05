@@ -4,11 +4,11 @@ fetch('https://api.npoint.io/35ab17d4caffedcae98f')
     .then(response => response.json())
     .then(fetchedData => {
         data = fetchedData;
-        displayData(data);
+        displayEntities(data);
     })
     .catch(error => console.error('Erreur:', error));
 
-function displayData(dataToDisplay) {
+function displayEntities(dataToDisplay) {
     const grid = document.getElementById('grid-container');
     dataToDisplay.forEach((element, index) => {
         const card = document.createElement('div');
@@ -115,17 +115,18 @@ function search(query) {
     
     const grid = document.getElementById('grid-container');
     grid.innerHTML = '';
-    displayData(filteredData);
+    displayEntities(filteredData);
 }
 
 function searchProofs(query) {
+    query = query.toLowerCase();
     const filteredData1 = data.filter(element => element.preuves[0].includes(query));
     const filteredData2 = data.filter(element => element.preuves[1].includes(query));
     const filteredData3 = data.filter(element => element.preuves[2].includes(query));
     
     const grid = document.getElementById('grid-container');
     grid.innerHTML = '';
-    displayData(filteredData1.concat(filteredData2).concat(filteredData3));
+    displayEntities(filteredData1.concat(filteredData2).concat(filteredData3));
 }
 
 
