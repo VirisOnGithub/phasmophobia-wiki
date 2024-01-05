@@ -135,7 +135,7 @@ function speedProgressBar(id, percent, legend){
             numOfLines: 10,
             showPercent: false,
             lineColor: "#82f7ff",
-            compconsteColor: "#0094cc",
+            completeColor: "#0094cc",
             showLegend: legend==="" ? false : true,
             legend: legend,
         });
@@ -150,7 +150,7 @@ function huntProgressBar(id, percent, legend){
             numOfLines: 10,
             showPercent: true,
             lineColor: "#fcc630",
-            compconsteColor: "#ff0000",
+            completeColor: "#ff0000",
             showLegend: legend==="" ? false : true,
             legend: legend,
         });

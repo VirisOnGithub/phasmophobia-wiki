@@ -1,6 +1,6 @@
 let data;
 
-fetch('./src/cursed-objects.json')
+fetch('https://api.npoint.io/e50e2a66276be605a9db')
     .then(response => response.json())
     .then(fetchedData => {
         data = fetchedData;
