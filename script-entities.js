@@ -1,6 +1,6 @@
 let data;
 
-fetch('./src/entities.json')
+fetch('https://api.npoint.io/35ab17d4caffedcae98f')
     .then(response => response.json())
     .then(fetchedData => {
         data = fetchedData;
@@ -56,11 +56,30 @@ function displayData(dataToDisplay) {
         cardContent.appendChild(subtitle1);
 
         const vitesse = document.createElement('div');
-        vitesse.setAttribute('id', 'progressBar'+index);
+        vitesse.setAttribute('id', 'speedProgressBar'+index);
         vitesse.classList.add('progressBar');
         const legend = element.vitesse === 0 ? "Variable" : "";
-        speedProgressBar('progressBar'+index, element.vitesse, legend);
+        speedProgressBar('speedProgressBar'+index, element.vitesse, legend);
         cardContent.appendChild(vitesse);
+
+        const separator = document.createElement('div');
+        separator.setAttribute('class', 'separator');
+        cardContent.appendChild(separator);
+        
+        const subtitle11 = document.createElement('h3');
+        subtitle11.innerHTML = "Chasse";
+        cardContent.appendChild(subtitle11);
+
+        const hunt = document.createElement('div');
+        hunt.setAttribute('id', 'huntProgressBar'+index);
+        hunt.classList.add('progressBar');
+        const legend2 = element.hunt === 0 ? "Variable" : "";
+        huntProgressBar('huntProgressBar'+index, element.hunt, legend2);
+        cardContent.appendChild(hunt);
+
+        const separator2 = document.createElement('div');
+        separator2.setAttribute('class', 'separator');
+        cardContent.appendChild(separator2);
 
         const subtitle2 = document.createElement('h3');
         subtitle2.innerHTML = "Particularités";
@@ -117,6 +136,21 @@ function speedProgressBar(id, percent, legend){
             showPercent: false,
             lineColor: "#82f7ff",
             compconsteColor: "#0094cc",
+            showLegend: legend==="" ? false : true,
+            legend: legend,
+        });
+        
+        progressBar.update(percent);
+    });
+}
+
+function huntProgressBar(id, percent, legend){
+    $(document).ready(function () {
+        var progressBar = $('#'+id).lineProgressBar({
+            numOfLines: 10,
+            showPercent: true,
+            lineColor: "#fcc630",
+            compconsteColor: "#ff0000",
             showLegend: legend==="" ? false : true,
             legend: legend,
         });

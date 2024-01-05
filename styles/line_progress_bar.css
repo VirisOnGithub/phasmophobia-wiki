@@ -1,6 +1,7 @@
 .progressBar {
-  margin-top: 0.4655rem;
+  margin-top: 50px;
   position: relative;
+  margin-bottom: 50px;
 }
 .progressBar .percent {
   position: absolute;
@@ -33,6 +34,10 @@
   text-transform: uppercase;
   padding-top: 0.5rem;
   z-index: 1;
+}
+
+.separator {
+  height: 40px;
 }
 
 @media screen and (min-width: 769px) {
