@@ -59,7 +59,7 @@ function displayData(dataToDisplay) {
         vitesse.setAttribute('id', 'progressBar'+index);
         vitesse.classList.add('progressBar');
         const legend = element.vitesse === 0 ? "Variable" : "";
-        progressbar('progressBar'+index, element.vitesse, legend);
+        speedProgressBar('progressBar'+index, element.vitesse, legend);
         cardContent.appendChild(vitesse);
 
         const subtitle2 = document.createElement('h3');
@@ -110,7 +110,7 @@ function searchProofs(query) {
 }
 
 
-function progressbar(id, percent, legend){
+function speedProgressBar(id, percent, legend){
     $(document).ready(function () {
         var progressBar = $('#'+id).lineProgressBar({
             numOfLines: 10,
