@@ -1,0 +1,10 @@
+.tarot{
+    margin: 0; 
+}
+.content-wrapper-cards{
+    display: flex;
+    flex-direction: row !important;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

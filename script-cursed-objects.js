@@ -1,3 +1,5 @@
+import {displayTarot} from './scripts-cards.js';
+
 let data;
 
 fetch('https://api.npoint.io/e50e2a66276be605a9db')
@@ -41,4 +43,5 @@ function displayObjects(d) {
         });
         contentWrapper.appendChild(description);
     });
+    displayTarot();
 }
