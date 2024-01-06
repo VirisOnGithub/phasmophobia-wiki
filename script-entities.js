@@ -53,35 +53,47 @@ function displayEntities(dataToDisplay) {
         });
         cardContent.appendChild(preuves);
 
-        const subtitle1 = document.createElement('h3');
-        subtitle1.innerHTML = "Vitesse";
-        cardContent.appendChild(subtitle1);
+        let graphs = document.createElement('div');
+        graphs.classList.add('graphs');
+        cardContent.appendChild(graphs);
 
-        const vitesse = document.createElement('div');
-        vitesse.setAttribute('id', 'speedProgressBar'+index);
-        vitesse.classList.add('progressBar');
-        const legend = element.vitesse === 0 ? "Variable" : "";
-        speedProgressBar('speedProgressBar'+index, element.vitesse, legend);
-        cardContent.appendChild(vitesse);
+            let speedContainer = document.createElement('div');
+            speedContainer.classList.add('graph');
+            graphs.appendChild(speedContainer);
 
-        const separator = document.createElement('div');
-        separator.setAttribute('class', 'separator');
-        cardContent.appendChild(separator);
+                const subtitle1 = document.createElement('h3');
+                subtitle1.innerHTML = "Vitesse";
+                speedContainer.appendChild(subtitle1);
+
+                const vitesse = document.createElement('div');
+                vitesse.setAttribute('id', 'speedProgressBar'+index);
+                vitesse.classList.add('progressBar');
+                const legend = element.vitesse === 0 ? "Variable" : "";
+                speedProgressBar('speedProgressBar'+index, element.vitesse, legend);
+                speedContainer.appendChild(vitesse);
+
+                const separator = document.createElement('div');
+                separator.setAttribute('class', 'separator');
+                speedContainer.appendChild(separator);
+            
+            let huntContainer = document.createElement('div');
+            huntContainer.classList.add('graph');
+            graphs.appendChild(huntContainer);
         
-        const subtitle11 = document.createElement('h3');
-        subtitle11.innerHTML = "Chasse";
-        cardContent.appendChild(subtitle11);
+                const subtitle11 = document.createElement('h3');
+                subtitle11.innerHTML = "Chasse";
+                huntContainer.appendChild(subtitle11);
 
-        const hunt = document.createElement('div');
-        hunt.setAttribute('id', 'huntProgressBar'+index);
-        hunt.classList.add('progressBar');
-        const legend2 = element.hunt === 0 ? "Variable" : "";
-        huntProgressBar('huntProgressBar'+index, element.hunt, legend2);
-        cardContent.appendChild(hunt);
+                const hunt = document.createElement('div');
+                hunt.setAttribute('id', 'huntProgressBar'+index);
+                hunt.classList.add('progressBar');
+                const legend2 = element.hunt === 0 ? "Variable" : "";
+                huntProgressBar('huntProgressBar'+index, element.hunt, legend2);
+                huntContainer.appendChild(hunt);
 
-        const separator2 = document.createElement('div');
-        separator2.setAttribute('class', 'separator');
-        cardContent.appendChild(separator2);
+                const separator2 = document.createElement('div');
+                separator2.setAttribute('class', 'separator');
+                huntContainer.appendChild(separator2);
 
         const subtitle2 = document.createElement('h3');
         subtitle2.innerHTML = "Particularités";

@@ -76,3 +76,23 @@ body {
         margin: 1vw 1vw;
     }
 }
+
+/* GRAPHES */
+
+.graphs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & > .graph{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .graphs{
+        flex-direction: column;
+        & > .graph{
+            width: 80vw;
+        }
+    }
+}
