@@ -96,6 +96,7 @@ function displayEntities(dataToDisplay) {
                 huntContainer.appendChild(separator2);
 
         const subtitle2 = document.createElement('h3');
+        subtitle2.classList.add('particularitesTitle');
         subtitle2.innerHTML = "Particularités";
         cardContent.appendChild(subtitle2);
 

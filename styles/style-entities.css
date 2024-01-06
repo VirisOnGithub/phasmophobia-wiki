@@ -96,3 +96,13 @@ body {
         }
     }
 }
+
+/* Particularités */
+
+.particularitesTitle{
+    font-size: 2rem;
+}
+
+.particularite{
+    font-size: 1.5rem;
+}
