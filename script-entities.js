@@ -12,6 +12,8 @@ function displayEntities(dataToDisplay) {
     const grid = document.getElementById('grid-container');
     dataToDisplay.forEach((element, index) => {
         const card = document.createElement('div');
+        card.setAttribute('data-aos', "zoom-in-down");
+        card.setAttribute('data-aos-duration', "200");
         card.setAttribute('class', 'card');
         card.setAttribute('onclick', 'this.classList.toggle("active");');
 
