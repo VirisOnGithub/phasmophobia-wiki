@@ -47,7 +47,7 @@ export function displayTarot(){
 
                 let proba = document.createElement('div');
                 proba.classList.add('proba');
-                proba.innerHTML = "Probabilité : "+element.probability;
+                proba.innerHTML = "Probabilité : "+element.probability+"%";
                 cardback.appendChild(proba);
 
                 contentWrapper.appendChild(card);
