@@ -1,5 +1,9 @@
 .tarot{
-    margin: 0; 
+    margin: 0;
+    transform: perspective(0) rotateY(0);
+    transition: transform 1s;
+    backface-visibility: hidden;
+    position: relative;
 }
 .content-wrapper-cards{
     display: flex;
@@ -7,4 +11,45 @@
     flex-grow: 1;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .tarot{
+        height: 50vh;
+        margin: 0 0 10vh;
+    }
+}
+
+.activecard{
+    transition: transform 1s;
+    & > .card-inner > .card-back{
+        z-index: 10;
+    }
+}
+
+.card-back{
+    background-color: #adadad;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+    color: black;
+    font-size: 1.5rem;
+
+    transform: translateY(-100%);
+
+    & > .effect {
+        position: absolute;
+        left: 50%;
+        top: 33%;
+        transform: translate(-50%, -50%);
+    }
+    & > .proba{
+        position: absolute;
+        left: 50%;
+        top: 66%;
+        transform: translate(-50%, -50%);
+    }
 }
