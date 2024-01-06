@@ -88,7 +88,7 @@ function displayEntities(dataToDisplay) {
                 hunt.setAttribute('id', 'huntProgressBar'+index);
                 hunt.classList.add('progressBar');
                 const legend2 = element.hunt === 0 ? "Variable" : "";
-                huntProgressBar('huntProgressBar'+index, element.hunt, legend2);
+                huntProgressBar('huntProgressBar'+index, element.hunt, legend2, element.hunt === 0 ? false : true);
                 huntContainer.appendChild(hunt);
 
                 const separator2 = document.createElement('div');
@@ -159,11 +159,11 @@ function speedProgressBar(id, percent, legend){
     });
 }
 
-function huntProgressBar(id, percent, legend){
+function huntProgressBar(id, percent, legend, showPercent=true){
     $(document).ready(function () {
         var progressBar = $('#'+id).lineProgressBar({
             numOfLines: 10,
-            showPercent: true,
+            showPercent: showPercent,
             lineColor: "#fcc630",
             completeColor: "#ff0000",
             showLegend: legend==="" ? false : true,
