@@ -11,17 +11,11 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
-        <header class="header">
-            <h1 class="title">Phasmophobia Wiki</h1>
-            <div class="links">
-                <a href="./index.html">Entités</a>
-                <a href="./cursedobjects.html">Preuves</a>
-                <a href="./tricks.html">Astuces</a>
-            </div>
-        </header>
+        <header class="header"></header>
         <div class="inputs">
             <input type="text" id="search" placeholder="Rechercher une entité" />
             <input type="text" id="searchProofs" placeholder="Rechercher une preuve" />
+            <input type="button" id="reset" value="Reset">
         </div>
         <div id="grid-container"></div>
 
@@ -34,5 +28,6 @@
         <script>
             AOS.init();
         </script>
+        <script src="./header.js"></script>
     </body>
 </html>

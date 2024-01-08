@@ -20,7 +20,7 @@ function displayObjects(d) {
 
         let image = document.createElement('img');
         image.classList.add('image');
-        image.src = './assets/'+e.filename;
+        image.src = './assets/cursedObjects/'+e.filename;
         image.alt = e.name;
         card.appendChild(image);
 

@@ -1,0 +1,182 @@
+[
+    {
+      "name" : "Livre",
+      "filename" : "book.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Caméra",
+      "filename" : "camera.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Bougie",
+      "filename" : "candle.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Crucifix",
+      "filename" : "crucifix.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "D.O.T.S.",
+      "filename" : "dots.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Lecteur EMF",
+      "filename" : "emf-reader.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Lampe de poche",
+      "filename" : "flashlight.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Caméra frontale",
+      "filename" : "front-camera.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Encens",
+      "filename" : "incense.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Briquet",
+      "filename" : "lighter.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Détecteur de mouvement",
+      "filename" : "movement-detector.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Micro parabolique",
+      "filename" : "parabolic-microphone.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Appareil photo",
+      "filename" : "photo.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Pilules",
+      "filename" : "pill.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Sel",
+      "filename" : "salt.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Spirit Box",
+      "filename" : "spirit-box.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Thermomètre",
+      "filename" : "thermometer.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name" : "Détecteur ultraviolets",
+      "filename" : "uv.png",
+      "usage" : "",
+      "levels" : [
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
