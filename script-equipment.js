@@ -1,6 +1,6 @@
 let data;
 
-fetch('https://api.npoint.io/4ea1e41eb1a343e65e0d')
+fetch('https://api.npoint.io/2df98c6193f8f44fadd4')
     .then(response => response.json())
     .then(d => {
         data = d;
@@ -30,22 +30,30 @@ function displayEquipment(d){
         contentWrapper.appendChild(name);
         let usage = document.createElement('h4');
         usage.classList.add('usage');
-        usage.innerHTML = 'Usage : '+e.usage;
+        e.usage.forEach(u => {
+            usage.innerHTML += u+'<br>';
+        });
         contentWrapper.appendChild(usage);
 
         let levels = document.createElement('div');
         levels.classList.add('levels');
-        
 
-        let levelsTitle = document.createElement('h4');
-        levelsTitle.classList.add('levels-title');
-        levelsTitle.textContent = 'Niveaux';
-        levels.appendChild(levelsTitle);
         for(let i = 0; i < 3; i++){
             let level = document.createElement('div');
             level.classList.add('level');
-            let levelDescription = document.createElement('p');
-            levelDescription.innerHTML = 'Niveau '+(i+1)+' : '+e.levels[i];
+            let levelTitle = document.createElement('h5');
+            levelTitle.innerHTML = 'Niveau '+(i+1)+' : ';
+            level.appendChild(levelTitle);
+
+            let levelDescription = document.createElement('div');
+            levelDescription.classList.add('level-description');
+            let tabcarac = e.levels[i].split(';');
+            tabcarac.forEach(carac => {
+                let caracElement = document.createElement('span');
+                caracElement.classList.add('carac');
+                caracElement.innerHTML = carac.trim();
+                levelDescription.appendChild(caracElement);
+            });
             level.appendChild(levelDescription);
             levels.appendChild(level);
         }
@@ -61,8 +69,9 @@ document.getElementById('input1').addEventListener('input', function(e) {
 
 function search(query) {
     const filteredData = data.filter(element => element.name.toLowerCase().includes(query.toLowerCase()));
+    const filteredData2 = data.filter(element => element.filename.toLowerCase().includes(query.toLowerCase()));
     
     const grid = document.getElementById('grid-container');
     grid.innerHTML = '';
-    displayEquipment(filteredData);
+    displayEquipment(filteredData.concat(filteredData2));
 }

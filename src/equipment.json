@@ -1,182 +1,243 @@
 [
-    {
-      "name" : "Livre",
-      "filename" : "book.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Caméra",
-      "filename" : "camera.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Bougie",
-      "filename" : "candle.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Crucifix",
-      "filename" : "crucifix.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "D.O.T.S.",
-      "filename" : "dots.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Lecteur EMF",
-      "filename" : "emf-reader.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Lampe de poche",
-      "filename" : "flashlight.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Caméra frontale",
-      "filename" : "front-camera.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Encens",
-      "filename" : "incense.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Briquet",
-      "filename" : "lighter.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Détecteur de mouvement",
-      "filename" : "movement-detector.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Micro parabolique",
-      "filename" : "parabolic-microphone.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Appareil photo",
-      "filename" : "photo.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Pilules",
-      "filename" : "pill.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Sel",
-      "filename" : "salt.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Spirit Box",
-      "filename" : "spirit-box.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Thermomètre",
-      "filename" : "thermometer.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name" : "Détecteur ultraviolets",
-      "filename" : "uv.png",
-      "usage" : "",
-      "levels" : [
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
+  {
+    "name" : "Livre",
+    "filename" : "book.png",
+    "usage" : [
+      "Le livre se place avec <kbd>F</kbd>",
+      "La preuve \"Écriture fantomatique\" est présente si le livre est gribouillé.",
+      "Si la preuve n'est pas présente (ou cachée en mode Cauchemar), l'entité balancera le livre",
+      "Le livre gribouillé peut être pris en photo, de même que le livre balancé",
+      "Si le livre est gribouillé, il n'y a plus de stylo à côté"
+    ],
+    "levels" : [
+      "Portée : 3m ; Interaction : Faible",
+      "Portée : 4m ; Interaction : Moyenne",
+      "Portée : 5m ; Interaction : Élevée"
+    ]
+  },
+  {
+    "name" : "Caméra",
+    "filename" : "camera.png",
+    "usage" : [
+      "Peut être pris à la main, un <kbd>Clic Droit</kbd> permet d'avoir la vision nocturne",
+      "La caméra, si elle est allumée, transmet son flux vidéo au camion",
+      "La caméra peut être posée sur un trépied pour augmenter sa stabilité",
+      "Permet de détecter la preuve : Orbe Fantomatique",
+      "Sur la caméra, si l'on voit des boules diffuses se balader de part et d'autre de l'écran, c'est que la preuve Orbe Fantomatique est présente",
+      "La caméra est aussi sensible aux D.O.T.S. : si une entité apparaît sous forme D.O.T.S. sur la caméra la preuve D.O.T.S. est présente (à ne pas confondre avec une apparition)"
+    ],
+    "levels" : [
+      "Qualité d'image : Faible ; Interférences : Fortes ; Électronique ; Renversement : Élevé",
+      "Qualité d'image : Moyenne ; Interférences : Moyennes ; Électronique ; Renversement : Élevé",
+      "Qualité d'image : Élevée ; Interférences : Faibles ; Électronique ; Renversement : Élevé"
+    ]
+  },
+  {
+    "name" : "Bougie",
+    "filename" : "candle.png",
+    "usage" : [
+      "",
+      ""  
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Crucifix",
+    "filename" : "crucifix.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "D.O.T.S.",
+    "filename" : "dots.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Lecteur EMF",
+    "filename" : "emf-reader.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Lampe de poche",
+    "filename" : "flashlight.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Caméra frontale",
+    "filename" : "front-camera.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Encens",
+    "filename" : "incense.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Briquet",
+    "filename" : "lighter.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Détecteur de mouvement",
+    "filename" : "movement-detector.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Micro parabolique",
+    "filename" : "parabolic-microphone.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Appareil photo",
+    "filename" : "photo.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Pilules",
+    "filename" : "pill.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Sel",
+    "filename" : "salt.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Spirit Box",
+    "filename" : "spirit-box.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Thermomètre",
+    "filename" : "thermometer.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "name" : "Détecteur ultraviolets",
+    "filename" : "uv.png",
+    "usage" : [
+      "",
+      ""
+    ],
+    "levels" : [
+      "",
+      "",
+      ""
+    ]
+  }
+]
