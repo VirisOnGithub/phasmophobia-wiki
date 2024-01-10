@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'October Crow';
+    src: url(../src/October\ Crow.ttf);
+}
+
 html {
     scroll-behavior: smooth;
+    font-family: 'October Crow';
 }
 
 /* Header */
@@ -72,4 +78,8 @@ kbd {
     line-height: 1;
     padding: 2px 4px;
     white-space: nowrap;
-  }
+}
+
+input{
+    font-family: 'October Crow';
+}
