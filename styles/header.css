@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'October Crow';
-    src: url(../src/OctoberCrowfinalcut.ttf);
+    src: url(../src/OctoberCrowwithaccents.ttf);
 }
 
 html {
@@ -78,8 +78,50 @@ kbd {
     line-height: 1;
     padding: 2px 4px;
     white-space: nowrap;
+    cursor:none;
 }
 
 input{
     font-family: 'October Crow';
+}
+
+/* GESTION DES THEMES CLAIRS/SOMBRES */
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #333;
+        color: #ccc;
+    } 
+    .card{
+        background-color: #444;
+        &:hover {
+            background-color: #555;
+        }
+    }
+    .links > a {
+        background-color: #444;
+        border: 1px solid #555;
+        color: #ccc;
+        &:hover {
+            color: #eee;
+        }
+    }
+    input{
+        background-color: #444;
+        border: 1px solid #555;
+        color: #ccc;
+        &:hover {
+            color: #eee;
+        }
+    }
+    kbd{
+        background-color: #444;
+        border: 1px solid #555;
+        color: #ccc;
+        box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(100, 100, 100, 0.7) inset;
+        &:hover {
+            color: #eee;
+        }
+    }
 }

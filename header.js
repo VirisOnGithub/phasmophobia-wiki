@@ -2,6 +2,8 @@ const header = document.querySelector('header');
 const title = document.createElement('h1');
 title.setAttribute('class', 'title');
 title.textContent = 'Phasmophobia Wiki';
+title.onclick = () => {window.location.href = './index.html';};
+title.style.cursor = 'pointer';
 header.appendChild(title);
 
 const links = document.createElement('div');
