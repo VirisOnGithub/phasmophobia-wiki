@@ -29,3 +29,8 @@ const link4 = document.createElement('a');
 link4.setAttribute('href', './equipment.html');
 link4.textContent = 'Equipement';
 links.appendChild(link4);
+
+const link5 = document.createElement('a');
+link5.setAttribute('href', './maps.html');
+link5.textContent = 'Cartes';
+links.appendChild(link5);

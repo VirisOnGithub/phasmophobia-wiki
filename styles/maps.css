@@ -1,0 +1,22 @@
+.mapstitle{
+    text-align: center;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > #maps{
+        margin: 1vw 1vw;
+        font-family: 'October Crow', cursive;
+        & > #option{
+            font-family: 'October Crow', cursive;
+        }
+    }
+}
+
+#map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
