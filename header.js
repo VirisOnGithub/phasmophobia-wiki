@@ -1,4 +1,4 @@
-const header = document.querySelector('header');
+const header = document.querySelector('.header');
 const title = document.createElement('h1');
 title.setAttribute('class', 'title');
 title.textContent = 'Phasmophobia Wiki';

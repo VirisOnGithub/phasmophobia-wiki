@@ -13,9 +13,15 @@
     <body>
         <header class="header"></header>
         <div class="inputs">
-            <input type="text" id="search" placeholder="Rechercher une entité" />
-            <input type="text" id="searchProofs" placeholder="Rechercher une preuve" />
-            <input type="button" id="reset" value="Reset">
+            <div class="inputContainer"></div>
+            <div class="inputContainer">
+                <input type="text" id="search" placeholder="Rechercher une entité" />
+                <input type="text" id="searchProofs" placeholder="Rechercher une preuve" />
+                <input type="button" id="reset" value="Reset">
+            </div>
+            <div class="inputContainer">
+                <p class="nbEntities"></p>
+            </div>
         </div>
         <div id="grid-container"></div>
 

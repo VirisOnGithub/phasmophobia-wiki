@@ -21,7 +21,12 @@ const displayMap = () => {
     console.log(map)
     let mapData = data.find(d => d.map === map);
     for (let i = 0; i < mapData.nbfiles; i++) {
-        mapContainer.innerHTML += `<img src="./assets/maps/${mapData.namefiles}-${i+1}.png" alt="map" style="width: ${100/i}%" />`;
+        mapContainer.innerHTML += `
+            <div class="map-item">
+                <h3 class="map-item-title">${mapData.floors[i]}</h3>
+                <img src="./assets/maps/${mapData.namefiles}-${i+1}.png" alt="map" style="height: 100%" />
+            </div>
+        `;
     }
 }
 

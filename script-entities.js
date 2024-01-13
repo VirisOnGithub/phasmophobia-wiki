@@ -10,6 +10,8 @@ fetch('https://api.npoint.io/35ab17d4caffedcae98f')
 
 function displayEntities(dataToDisplay) {
     const grid = document.getElementById('grid-container');
+    const nbEntities = document.querySelector('.nbEntities');
+    nbEntities.innerHTML = "Nombre d'entités : " + dataToDisplay.length;
     dataToDisplay.forEach((element, index) => {
         const card = document.createElement('div');
         card.setAttribute('data-aos', "zoom-in-down");
