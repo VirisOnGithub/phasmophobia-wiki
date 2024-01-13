@@ -29,13 +29,19 @@ body {
     grid-template-columns: auto auto auto;
 }
 .card {
-    background-color: #f2f2f2;
+    background-image: url(../assets/parchment.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    filter: contrast(0.9);
     padding: 20px;
     text-align: center;
     margin: 10px;
     cursor: pointer;
     &:hover {
-        background-color: #ddd;
+        filter: contrast(1.2);
+        transition: all 0.3s ease;
     }
     transition: all 0.3s ease;
 }
@@ -72,25 +78,36 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1.5rem;
+    height: 1.5rem;
     & > .inputContainer{
         width: calc(100% / 3);
         &:nth-child(2) {
             display: flex;
             justify-content: center; 
-            & > input{
+            & > input[type="text"]{
+                height: 1.5rem;
+                font-size: 1.5rem;
+                margin: 1vw 1vw;
+            }
+            & > input[type="button"]{
+                height: 2rem;
+                font-size: 1.5rem;
                 margin: 1vw 1vw;
             }
         }
         &:nth-child(3) {
             display: flex;
             justify-content: flex-end;
+            z-index: -1;
         }
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .inputs{
         flex-direction: column;
+        margin: 10vh 0;
         & > .inputContainer{
             width: 100%;
             &:nth-child(2) > input{
