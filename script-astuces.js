@@ -9,15 +9,9 @@ fetch('https://api.npoint.io/0d298dac1263556005a9')
     .catch(error => console.error('Erreur:', error));
 
     const displayTricks = (d) => {
-        const grid = document.getElementById('grid-container');
-        const liste = document.createElement('ul');
-        liste.setAttribute('class', 'liste');
-        grid.appendChild(liste);
+        const liste = document.querySelector('.liste');
         d.forEach(e => {
-            const list = document.createElement('li');
-            list.setAttribute('class', 'list');
-            list.innerHTML = e;
-            liste.appendChild(list);
+            liste.innerHTML += `<li class="list">${e}</li>`;
         });
     }
 
