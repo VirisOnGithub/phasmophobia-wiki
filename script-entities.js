@@ -149,15 +149,37 @@ function search(query) {
     }
 }
 
-function searchProofs(query) {
+/*function searchProofs(query) {
     query = query.toLowerCase();
-    const filteredData1 = data.filter(element => element.preuves[0].includes(query));
-    const filteredData2 = data.filter(element => element.preuves[1].includes(query));
-    const filteredData3 = data.filter(element => element.preuves[2].includes(query));
+    const filteredData = data.filter(element => element.preuves.some(preuve => preuve.includes(query)));
     
     const grid = document.getElementById('grid-container');
     grid.innerHTML = '';
-    displayEntities(filteredData1.concat(filteredData2).concat(filteredData3));
+    displayEntities(filteredData);
+}*/
+
+function searchProofs(query) {
+    query = query.toLowerCase();
+    query = query.split(' ');
+    query = query.filter(e => e !== '');
+    const filteredData = data.filter(element => {
+        let found = true;
+        query.forEach(q => {
+            if (!element.preuves.some(preuve => preuve.includes(q))) {
+                found = false;
+            }
+        });
+        return found;
+    });
+
+    const grid = document.getElementById('grid-container');
+    grid.innerHTML = '';
+    displayEntities(filteredData);
+
+    if (filteredData.length === 1) {
+        const element = document.querySelector('.card');
+        element.classList.add('active');
+    }
 }
 
 
