@@ -1,36 +1,12 @@
 const header = document.querySelector('.header');
-const title = document.createElement('h1');
-title.setAttribute('class', 'title');
-title.textContent = 'Phasmophobia Wiki';
-title.onclick = () => {window.location.href = './index.html';};
-title.style.cursor = 'pointer';
-header.appendChild(title);
 
-const links = document.createElement('div');
-links.setAttribute('class', 'links');
-header.appendChild(links);
-
-const link1 = document.createElement('a');
-link1.setAttribute('href', './index.html');
-link1.textContent = 'Entités';
-links.appendChild(link1);
-
-const link2 = document.createElement('a');
-link2.setAttribute('href', './cursedobjects.html');
-link2.textContent = 'Objets maudits';
-links.appendChild(link2);
-
-const link3 = document.createElement('a');
-link3.setAttribute('href', './tricks.html');
-link3.textContent = 'Astuces';
-links.appendChild(link3);
-
-const link4 = document.createElement('a');
-link4.setAttribute('href', './equipment.html');
-link4.textContent = 'Equipement';
-links.appendChild(link4);
-
-const link5 = document.createElement('a');
-link5.setAttribute('href', './maps.html');
-link5.textContent = 'Cartes';
-links.appendChild(link5);
+header.innerHTML = `
+    <h1 class="title" style="cursor: pointer" onclick="window.location.href = './index.html'">Phasmophobia Wiki</h1>
+    <div class="links">
+        <a href="./index.html">Entités</a>
+        <a href="./cursedobjects.html">Objets maudits</a>
+        <a href="./tricks.html">Astuces</a>
+        <a href="./equipment.html">Equipement</a>
+        <a href="./maps.html">Cartes</a>
+    </div>
+`;
